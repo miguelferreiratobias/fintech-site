@@ -1,0 +1,400 @@
+body{
+    height: 100vh;
+    padding: 0.5em;
+}
+
+.main-body{
+    background-image: url('../images/login-bg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+.alt-body{
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #FFD700;
+    transition: 0.3s;
+}
+
+button:hover{
+    color:#FFD700;
+    border-color: #FFD700;
+    transition: 0.3s;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10em;
+}
+
+.botao-notif{
+    background: none;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.bell-icon, .qmark-icon, .menu-icon{
+    height: 4em;
+}
+
+.img-logo{
+    height: 6em;
+}
+
+.popup{
+    width: 85vw;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popup-title{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1em 0 1em;
+    color: #85bb65;
+    text-shadow: 1px 0px 2px darkgreen;
+}
+
+.abrir-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-button{
+    width: 100%;
+    margin-top: 1em;
+    padding: 10px 0;
+    background: #85bb65;
+    color: whitesmoke;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-container{
+    margin-top: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-esquerda{
+    display: none;
+}
+
+.login{
+    display: grid;
+    height: fit-content;
+    row-gap: 0.8em;
+    grid-template-columns: 80vw;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.acc-icon{
+    height: 1.5em;
+    margin: 0.3em 0 0.3em 1em;
+}
+
+.login-button{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    border: 3px solid #85bb65;
+    border-radius: 15px;
+    color: #85bb65;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.9);
+    height: 2.5em;
+}
+
+.alt-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.signin-text{
+    color: #85bb65;
+    text-shadow: 1px 0px 2px darkgreen;
+    font-size: 1.1em;
+}
+
+.signin-button{
+    border: 3px solid #85bb65;
+    border-radius: 15px;
+    color: #85bb65;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.9);
+    height: 2.5em;
+}
+
+.access-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.external-access, .ext-access-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ext-access-btn h1{
+    display: none;
+}
+
+.external-button{
+    height: 5em;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-icon{
+    width: 3em;
+    height: auto;
+}
+
+.dashboard-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.chartBox{
+    width: 90vw;
+    margin: 1em auto;
+}
+
+.plan-financ{
+    width: 90vw;
+    margin: 2em auto;
+    border: 3px solid #85bb65;
+    border-radius: 15px;
+}
+
+.balanco{
+    margin: 0.5em auto;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border: 3px solid #85bb65;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.balanco-text{
+    color: goldenrod;
+}
+
+.balanco-number{
+    color: darkgreen;
+}
+
+.popup-link{
+    font-size: 1.3em;
+    color: #85bb65;
+    text-decoration: none;
+}
+
+.renda-fixa, .renda-variavel, .moedas-estrangeiras, .carteira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.renda-fixa h1, .renda-variavel h1, .moedas-estrangeiras h1, .carteira h1{
+    color: #85bb65;
+}
+
+.carteira{
+    text-align: center;
+}
+
+.ativo{
+    width: 90vw;
+    padding: 0.4em;
+    border: 3px solid #85bb65;
+    border-radius: 15px;
+}
+
+.ativo h2{
+    font-size: 1.4em;
+    color: #85bb65;
+    font-weight: 700;
+}
+
+.ativo h3{
+    color: #FFD700;
+}
+
+.notif-title{
+    color: #85bb65;
+}
+
+
+@media screen and (min-width: 900px) {
+    .main-body{
+        background-image: url('../images/login-bg-desktop.jpg');
+        background-size: auto;
+    }
+   
+    .main-nav, .alt-nav, .dashboard-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 3em 10em 0em 10em;
+        padding: 0;
+        
+    }
+
+    .main-container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0vh;
+    }
+
+    .main-direita{
+        margin-top: 10vh;
+    }
+
+    .main-esquerda{
+        margin: 0 5vh 0 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-esquerda h1, .ext-access-btn h1, .popup-title{
+        font-size: 3em;
+        color: #85bb65;
+        text-shadow: 1px 0px 2px darkgreen;
+        
+    }
+            
+    .qr-code{
+        width:35%;
+        height: auto;
+    }
+
+    .login{
+        grid-template-columns: 20vw;
+    }
+
+    .login-button{
+        grid-template-columns: 10% 90%;
+        font-size: 1.5em;
+    }
+    
+    .signin-text{
+        font-size: 1.3em;
+    }
+    
+    .signin-button{
+        font-size: 1.5em;
+    }
+    
+    .signin-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .signin-container form{
+        width: 70%;
+        margin-top: 10vh;
+        margin-left: 5vw;
+    }
+
+    .ext-access-btn h1{
+        display: block;
+    }
+    .ext-access-btn p{
+        display: none;
+    }
+
+    .external-container{
+        background-color: rgba(245, 245, 245, 0.9);
+        height: fit-content;
+        padding: 3em;
+        border: 3px solid #85bb65;
+        border-radius: 15px;
+        margin-top: 10vh;
+        margin-right: 5vw;
+    }
+
+    .popup{
+        width: 40vw;
+    }
+    
+    .popup-text{
+        font-size: 1.3em;
+    }
+
+    .popup-link{
+        font-size: 1.6em;
+    }
+
+    .popup-link:hover{
+        color: #FFD700;
+    }
+
+    .dashboard-container{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .chartBox{
+        width: 40vw;
+        grid-row: 1 / span 2;
+    }
+
+    .plan-financ{
+        width: 40vw;
+        margin: 5em 5vw 0 5vw;
+    }
+
+    .balanco{
+        margin: 3em auto;
+        font-size: 2em;
+    }
+}
